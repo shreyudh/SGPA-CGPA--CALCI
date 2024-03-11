@@ -1,0 +1,256 @@
+/* Reset default margin and padding */
+body, h1, h2, h3, p {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Global styles */
+body {
+font-family: Arial, sans-serif;
+background-color: #ffffff;
+color: #333333;
+}
+
+.container {
+max-width: 1200px;
+margin: 0 auto;
+padding: 20px;
+}
+
+/* Navbar styles */
+.navbar {
+background-color: grey;
+color: grey;
+}
+
+.navbar-brand {
+color: black;
+font-weight: bold;
+text-decoration: none;
+}
+
+/* Home page styles */
+.home-page {
+text-align: center;
+padding: 287px;
+}
+
+.year-boxes {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+
+}
+
+.year-box {
+display: inline-block;
+padding: 10px 20px;
+background-color: #3498db;
+color: #ffffff;
+font-weight: bold;
+border: 2px solid #2980b9;
+border-radius: 8px;
+text-decoration: none;
+transition: background-color 0.3s, border-color 0.3s;
+}
+
+.year-box:hover {
+background-color: #2980b9;
+border-color: #2471a3;
+}
+
+/* Year page styles */
+.year-page {
+text-align: center;
+font-family: Arial, sans-serif;
+padding: 277px;
+}
+.semester-buttons {
+display: flex;
+justify-content: center;
+gap: 20px;
+margin-top: 20px;
+}
+
+.semester-buttons button {
+padding: 10px 20px;
+background-color: #ffffff;
+border: 2px solid #3498db;
+border-radius: 8px;
+color: #3498db;
+font-weight: bold;
+cursor: pointer;
+transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.semester-buttons button:hover {
+background-color: #3498db;
+border-color: #2980b9;
+color: #ffffff;
+}
+
+.link-list {
+list-style: none;
+padding: 0;
+margin: 0;
+}
+
+.link-list li {
+margin-bottom: 10px;
+}
+
+.link-list a {
+display: inline-block;
+padding: 5px 10px;
+background-color: #3498db;
+color: #ffffff;
+text-decoration: none;
+border: 1px solid #2980b9;
+border-radius: 5px;
+}
+
+.link-list a:hover {
+background-color: #2980b9;
+border-color: #2471a3;
+}
+
+.form-group {
+margin-bottom: 15px;
+}
+
+.form-group label {
+display: block;
+font-weight: bold;
+}
+
+.form-group input[type="number"] {
+width: 60px;
+padding: 5px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.gpa-result {
+margin-top: 20px;
+}
+
+
+
+
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  
+  
+  }
+  
+  .home {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #ffffff;
+  font-weight: bold;
+  border: 2px solid #2980b9;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background-color 0.3s, border-color 0.3s;
+  }
+  
+  .home:hover {
+  background-color: #2980b9;
+  border-color: #2471a3;
+  }
+
+  .oddeven {
+    display: block;
+    line-height: 80px;
+    align-items: center;
+    background-color: #fee6e3;
+    border: 2px solid #111;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #111;
+    cursor: pointer;
+    display: flex;
+    font-family: Inter,sans-serif;
+    font-size: 16px;
+    height: 48px;
+    justify-content: center;
+    line-height: 24px;
+    max-width: 100%;
+    padding: 0 25px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+  
+  .oddeven:after {
+    background-color: #111;
+    border-radius: 8px;
+    content: "";
+    display: block;
+    height: 48px;
+    left: 0;
+    width: 100%;
+    position: absolute;
+    top: -2px;
+    transform: translate(8px, 8px);
+    transition: transform .2s ease-out;
+    z-index: -1;
+  }
+  
+  .oddeven:hover:after {
+    transform: translate(0, 0);
+  }
+  
+  .oddeven:active {
+    background-color: #ffdeda;
+    outline: 0;
+  }
+  
+  .oddeven:hover {
+    outline: 0;
+  }
+  
+  @media (min-width: 768px) {
+    .oddeven {
+      padding: 0 40px;
+    }
+  }
+
+
+
+  .year-page {
+    position: relative;
+  }
+  
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: -1; /* Place the background behind the content */
+  }
+  
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Text color for better readability */
+    position: relative;
+    z-index: 1; /* Place the content above the background */
+  }
+  .department-list li{
+    list-style: none;
+  }
